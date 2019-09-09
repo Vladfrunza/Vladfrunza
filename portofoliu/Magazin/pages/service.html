@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|PT+Serif:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/inchiriere-reparatii.css">
+    <script src="../javascript/script.js"></script>
+    <title>MySport</title>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>e-mail: mysport@yahoo.com</p>
+            </div>
+            <div class="col-1-of-2">
+                <p>Call center: 0223225255</p>
+            </div>
+        </div>
+    </div>
+    <div class="head-top">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="top-left">
+                    <a href="../index.html"><img class="img-head" src="../images/logo.png" alt="logo mysport"></a>
+                    <span>MySport</span>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="top-search">
+                    <form action="search.php">
+                        <input type="text" placeholder="Cautare.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="top-right">
+                    <div class="dropdown-cart" id="dropdown-cart">
+                        <i class="fa fa-shopping-cart" onclick="dropdownCart()"></i>
+                        <div class="dropdown-cart-empty" id="dropdown-cart-empty">
+                            <p>Nu ai produse in cos</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-cont">
+                        <i class="fa fa-caret-down"></i>
+                        <span class="dropdown-span" onclick="dropdownCont()">Contul Meu</span>
+                        <div class="dropdown-cont-body" id="dropdown-cont-body">
+                            <p>Utilizator</p>
+                            <input type="text" name="utilizator" placeholder="utilizator" value="" />
+                            <p>Parola</p>
+                            <input type="password" name="parola" placeholder="parola" value="" />
+                            </br>
+                            <button>Autentificare</button>
+                            <div class="cont-nou">
+                                <p><a href="#">Recuperare parola</a></p>
+                                <p><a href="#">Nu ai cont?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="row">
+            <p>CEL MAI MIC PRET !</p>
+            <p>Transport gratuit de la 499,9 Ron </p>
+            <p>*Daca gasesti in alta parte mai ieftin, primesti 2x diferenta</p>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul>
+                    <li><a href="biciclete.html" class="ciclism">Ciclism</a></li>
+                    <li><a href="alergare.html" class="alergare">Alergare</a></li>
+                    <li><a href="inot.html" class="inot">Inot</a> </li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="button-contact">
+                    <div class="button-contact-primary">
+                        <ul>
+                            <li class="contact-btn" onclick="contact()">CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-contact" id="dropdown-contact">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-phone"></i> Info:</p>
+                                <p>021.311.825</p>
+                                <p class="contact"><i class="fa fa-calendar"></i> Program:</p>
+                                <p>Luni-Vineri: 10-20</p>
+                                <p>Sambata:10-16</p>
+                                <p>Duminica: inchis</p>
+                                <p class="contact"><i class="fa fa-address-card"></i> Adresa:</p>
+                                <p>Musatini nr 3, Iasi</p>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-envelope"></i>E-mail</p>
+                                <p>mysport@yahoo.com</p>
+                                <p class="contact"><i class="fa fa-wrench"></i>Service</p>
+                                <p>072606300</p>
+                                <p>*La service este necesara programare</p>
+                                <button><a href="contact.html">Detalii</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-tab">
+        <div class="row">
+            <div class="col-1-of-4 ">
+                <div class="nav-mobile" onclick="toggle()">
+                    <div class="nav-toggle">
+                        <div class="nav-toggle-bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="../index.html">Acasa</a></li>
+                            <li><a href="biciclete.html">Ciclism</a></li>
+                            <li><a href="alergare.html">Alergare</a></li>
+                            <li><a href="inot.html">Inot</a></li>
+                            <li><a href="contact.html">CONTACT</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p id='meniu'>Meniu</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="cautare()"><i class="fa fa-search"></i>Cauta</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="profil()"><i class="fa fa-user"></i>Cont</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="shopping()"><i class="fa fa-shopping-cart"></i>Cos</p>
+            </div>
+        </div>
+        <div class="dropdown-cautare" id="dropdown-cautare">
+            <form action="#">
+                <input type="search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="dropdown-profil" id="dropdown-profil">
+            <form action="#">
+                <input type="search" placeholder="Nume">
+                <input type="text" placeholder="Prenume">
+                <button>Autentificare</button>
+            </form>
+        </div>
+        <div class="dropdown-cumparaturi" id="dropdown-cumparaturi">
+            <p>Nu exista produse</p>
+        </div>
+    </div>
+    <div class="service-pag">
+        <div class="row">
+            <h3>intretinere si reparatie ciclism</h3>
+            <div class="col-1-of-3">
+                <h4>Servicii express</h4>
+                <p>MONTARE ACCESORIU <span>2.90 Ron</span> </p>
+                <p>SCHIMBARE CAMERĂ SAU CAUCIUC<span>4.90 Ron</span></p>
+                <p>REGLARE JOC DE DIRECȚIE<span>5.90 Ron</span></p>
+                <p>REGLARE FRÂNE<span>6.90 Ron</span></p>
+                <p>SCHIMBARE CABLU FRÂNĂ SAU SCHIMBĂTOR<span>7.00 Ron</span></p>
+                <p>CENTRARE ROATĂ<span>9.90 Ron</span></p>
+                <p>SCHIMBARE LANȚ<span>9.90 Ron</span></p>
+                <p>SCHIMBARE PERECHE PLĂCUȚE SAU PATINE DE FRÂNĂ<span>9.90 Ron</span></p>
+                <p>SCHIMBARE PINION SAU BLOC DE PINIOANE<span>9.90 Ron</span></p>
+                <p>SCHIMBARE ȘA<span>9.90 Ron</span></p>
+                <p>REGLARE SCHIMBĂTOR FAȚĂ SAU SPATE<span>9.90 Ron</span></p>
+                <p>SCHIMBARE ROATĂ FAȚĂ SAU SPATE<span>14.90 Ron</span></p>
+                <p>SCHIMBARE MANETĂ SCHIMBĂTOR<span>19.90 Ron</span></p>
+                <p>MONTARE APĂRĂTOARE NOROI / PORTBAGAJ<span>29.90 Ron</span></p>
+            </div>
+            <div class="col-1-of-3">
+                <h4>Pachet manopera securitate</h4>
+                <p>VERIFICARE + REGLAJ DIRECȚIE :<span>29.90 Ron</span></p>
+                <ul>
+                    <li>
+                        <p>Strângere ghidon</p>
+                    </li>
+                    <li>
+                        <p>Strângere pipă</p>
+                    </li>
+                    <li>
+                        <p>Reglare joc de direcție</p>
+                    </li>
+                </ul>
+                <p>VERIFICARE + REGLARE POZIȚIE :<span>39.90 Ron</span></p>
+                <ul>
+                    <li>
+                        <p>Verificare + strângere + ungere tijă de șa</p>
+                    </li>
+                    <li>
+                        <p>Verificare + strângere șa</p>
+                    </li>
+                </ul>
+                <p>VERIFICARE + REGLARE SISTEM DE FRÂNE :<span>49.90 Ron</span></p>
+                <ul>
+                    <li>
+                        <p>Reglare înclinație şi strângere manete de frână</p>
+                    </li>
+                    <li>
+                        <p>Verificarea uzurii și reglarea patinelor</p>
+                    </li>
+                    <li>
+                        <p>Reglarea și întinderea cablurilor de frână față și spate</p>
+                    </li>
+                    <li>
+                        <p>Strângerea manivelelor + pedalelor</p>
+                    </li>
+                </ul>
+                <p>VERIFICARE + REGLAJ TRANSMISIE<span>59.90 Ron</span></p>
+                <ul>
+                    <li>
+                        <p>Reglare + lubrifiere schimbătoare față și spate + manete</p>
+                    </li>
+                    <li>
+                        <p>Ungerea lanțului</p>
+                    </li>
+                    <li>
+                        <p>Centrarea roților față și spate</p>
+                    </li>
+                    <li>
+                        <p>Presiunea în pneuri</p>
+                    </li>
+                    <li>
+                        <p>Reglare joc butuc față și spate</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1-of-3">
+                <h4>Pachet manopera trasmitie</h4>
+                <p>SCHIMBARE PIESE + REGLARE TRANSMISIE :<span>129.90 Ron</span></p>
+                <ul>
+                    <li>
+                        <p>Schimbător față spate</p>
+                    </li>
+                    <li>
+                        <p>Lanț</p>
+                    </li>
+                    <li>
+                        <p>Cabluri și cămăși</p>
+                    </li>
+                    <li>
+                        <p>Pinion sau bloc de pinioane</p>
+                    </li>
+                    <li>
+                        <p>Ureche sau galet schimbător de viteze</p>
+                    </li>
+                    <li>
+                        <p>Manetă schimbător de viteză</p>
+                    </li>
+                    <li>
+                        <p>Pedalier sau monobloc pedalier</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <p onclick="informatii()">Informatii Utile <i class="fa fa-angle-down"></i></p>
+                    <ul id="informatii-utile">
+                        <lI><a href="contact.html">Contact</a></lI>
+                        <li><a href="cumplatesc.html">Cum platesc</a></li>
+                        <li><a href="garantii.html">Garantii oferite</a></li>
+                        <li><a href="livrare-retur.html">Livrare si retur</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="termeni()">Termeni legali <i class="fa fa-angle-down"></i></p>
+                    <ul id="termeni-legali">
+                        <li><a href="termeni-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="https://www.dataprotection.ro/?page=Responsabilul_cu_protectia_datelor" target="_blank">Prelucrarea datelor cu caracter personal</a></li>
+                        <li><a href="http://www.anpc.gov.ro/" target="_blank">A.n.p.c</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="follow()">Follow us <i class="fa fa-angle-down"></i></p>
+                    <div id="follow" class="follow">
+                        <div class="icon-follow">
+                            <i class="fa fa-facebook"></i>
+                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-instagram"></i>
+                            <a href="http://www.instagram.com" target="_blank">Instagram</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-youtube"></i>
+                            <a href="http://www.youtube.com" target="_blank">Youtube</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-google"></i>
+                            <a href="http://www.google.com">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <span>Copyright © Vlad Frunza 2019. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

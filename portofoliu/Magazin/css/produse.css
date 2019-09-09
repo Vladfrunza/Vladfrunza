@@ -1,0 +1,244 @@
+
+ .vanzari .col-1-of-4 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+}
+.imagine-produs-biciclete {
+    width: 31.33%;
+    height: 40rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    opacity: .9;
+}
+.imagine-produs-biciclete:hover {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+.imagine-produs-biciclete:not(:last-child) {
+    margin-right: 1%;
+}
+.imagine-produs-biciclete .img {
+    width: 85%;
+    height: 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+}
+.numeProdus {
+    color: rgb(0, 94, 184);
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+.informatie {
+    font-size: 1.4rem;
+}
+.pret {
+    font-size: 1.6rem;
+    color: red;
+    font-weight: 600;
+    padding: .5rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+.cos {
+    width: 55%;
+    height: 4rem;
+    background: #28a745;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 1rem;
+    -webkit-box-shadow: 0 .4rem .8rem grey;
+    box-shadow: 0 .4rem .8rem grey;
+    cursor: pointer;
+    -webkit-transition: all .0s;
+    transition: all .0s;
+}
+.imagine-produs-biciclete:hover .img {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+.fa-cart-arrow-down {
+    font-size: 2.5rem;
+    color: rgb(0, 94, 184);
+    padding: 0.75rem;
+    -webkit-transform: translateY(.3rem);
+    transform: translateY(.3rem);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.adaugaCos {
+    font-weight: 300;
+    color: black;
+}
+.cos:hover {
+    background: linear-gradient(to right, #0a549a 0%, #000099 118%);
+}
+.cos:hover .fa-cart-arrow-down {
+    color: white;
+}
+.cos:hover .adaugaCos{
+    color: white;
+}
+#filter1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #28a745;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.filtreaza p, .sortare p {
+    text-indent: 4px;
+    padding-top: 1rem;
+    color: rgb(0, 94, 184);
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+select {
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.3rem .5rem;
+    width: 80%;
+    background: rgb(0, 94, 184);
+    margin: 1rem 2rem;
+    border: none;
+    border-radius: 2px;
+    display: none;
+}
+.filtreaza button{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(0, 94, 184);
+    background: #28a745;
+    padding: 1rem 3rem;
+    margin: 2.5rem auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filtreaza button:hover {
+    background: #2de658;
+}
+.filtreScroll {
+    overflow-y: scroll;
+    height: 25rem;
+}
+.sorteaza p, .sorteaza select {
+    display: inline-block;
+}
+.sorteaza select {
+    width: 15%;
+}
+.sorteaza {
+    text-align: right;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(194, 188, 186);
+}
+.vanzari {
+    margin: 4rem;
+}
+.filtreaza {
+    cursor: pointer;
+}
+.filtreaza i {
+    float: right;
+    margin-right: 1rem;
+}
+.filtreaza p:not(:first-child) {
+    border-top: 1px solid grey;
+}
+.filtreaza p:nth-child(2) {
+    border-top: none;
+}
+@media (max-width: 1024px) {
+    .cos{
+        width: 80%
+   }
+    .sorteaza select {
+        width: 20%
+   }
+    .informatie {
+        font-size: 1.2rem;
+   }
+    .imagine-produs-biciclete {
+        height: auto;
+   }
+    .imagine-produs-biciclete:hover {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+   }
+    .filtreScroll{
+        overflow-y: hidden;
+        height: auto;
+   }
+}
+@media (max-width: 992px){
+    .vanzari .col-1-of-4 {
+        position: sticky;
+   }
+    .vanzari .row .col-1-of-4{
+        width: 26%;
+   }
+    .imagine-produs-biciclete:not(:last-child){
+        margin-right: 5%;
+   }
+    .imagine-produs-biciclete{
+        width: 45%;
+        height: auto;
+   }
+    .vanzari .row .col-3-of-4 {
+       width: 60%;
+   }
+    .sorteaza select {
+        width: 30%
+   }
+    .adaugaCos {
+        font-size: 1.4rem;
+   }
+}
+@media (max-width: 576px ){
+    .vanzari .col-1-of-4 {
+        position: static;
+   }
+    .adaugaCos {
+        font-size: 2rem;
+   }
+    .pret, .numeProdus {
+        font-size: 2.5rem;
+   }
+    .informatie {
+        font-size: 1.5rem;
+   }
+}
+@media (max-width: 480px ) {
+    .vanzari .row .col-1-of-4 {
+        width: 100%;
+   }
+    .vanzari .row .col-3-of-4, .imagine-produs-biciclete {
+        width: 100%;
+   }
+    .imagine-produs-biciclete .img {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+   }
+    .sorteaza select {
+        width: 50%;
+   }
+    .cos {
+        width: 45%;
+   }
+}
+@media (orientation: landscape) and (max-width: 1024px) {
+    .vanzari .col-1-of-4 {
+        position: static;
+   }
+}

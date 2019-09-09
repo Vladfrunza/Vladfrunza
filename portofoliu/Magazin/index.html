@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <title>MySport</title>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>e-mail: mysport@yahoo.com</p>
+            </div>
+            <div class="col-1-of-2">
+                <p>Call center: 0223225255</p>
+            </div>
+        </div>
+    </div>
+    <div class="head-top">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="top-left">
+                    <a href="index.html"><img class="img-head" src="images/logo.png" alt="logo mysport"></a>
+                    <span>MySport</span>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="top-search">
+                    <form action="search.php">
+                        <input type="text" placeholder="Cautare.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="top-right">
+                    <div class="dropdown-cart" id="dropdown-cart">
+                        <i class="fa fa-shopping-cart" onclick="dropdownCart()"></i>
+                        <div class="dropdown-cart-empty" id="dropdown-cart-empty">
+                            <p>Nu ai produse in cos</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-cont">
+                        <i class="fa fa-caret-down"></i>
+                        <span class="dropdown-span" onclick="dropdownCont()">Contul Meu</span>
+                        <div class="dropdown-cont-body" id="dropdown-cont-body">
+                            <p>Utilizator</p>
+                            <input type="text" name="utilizator" placeholder="utilizator" value="" />
+                            <p>Parola</p>
+                            <input type="password" name="parola" placeholder="parola" value="" />
+                            </br>
+                            <button>Autentificare</button>
+                            <div class="cont-nou">
+                                <p><a href="#">Recuperare parola</a></p>
+                                <p><a href="#">Nu ai cont?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="row">
+            <p>CEL MAI MIC PRET !</p>
+            <p>Transport gratuit de la 499,9 Ron </p>
+            <p>*Daca gasesti in alta parte mai ieftin, primesti 2x diferenta</p>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul>
+                    <li><a href="pages/biciclete.html" class="ciclism">Ciclism</a></li>
+                    <li><a href="pages/alergare.html" class="alergare">Alergare</a></li>
+                    <li><a href="pages/inot.html" class="inot">Inot</a> </li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="button-contact">
+                    <div class="button-contact-primary">
+                        <ul>
+                            <li class="contact-btn" onclick="contact()">CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-contact" id="dropdown-contact">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-phone"></i> Info:</p>
+                                <p>021.311.825</p>
+                                <p class="contact"><i class="fa fa-calendar"></i> Program:</p>
+                                <p>Luni-Vineri: 10-20</p>
+                                <p>Sambata:10-16</p>
+                                <p>Duminica: inchis</p>
+                                <p class="contact"><i class="fa fa-address-card"></i> Adresa:</p>
+                                <p>Musatini nr 3, Iasi</p>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-envelope"></i>E-mail</p>
+                                <p>mysport@yahoo.com</p>
+                                <p class="contact"><i class="fa fa-wrench"></i>Service</p>
+                                <p>072606300</p>
+                                <p>*La service este necesara programare</p>
+                                <button><a href="pages/contact.html">Detalii</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-tab">
+        <div class="row">
+            <div class="col-1-of-4 ">
+                <div class="nav-mobile">
+                    <div class="nav-toggle" onclick="toggle()">
+                        <div class="nav-toggle-bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="index.html">Acasa</a></li>
+                            <li><a href="pages/biciclete.html">Ciclism</a></li>
+                            <li><a href="pages/alergare.html">Alergare</a></li>
+                            <li><a href="pages/inot.html">Inot</a></li>
+                            <li><a href="pages/contact.html">CONTACT</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p id='meniu'>Meniu</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="cautare()"><i class="fa fa-search"></i>Cauta</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="profil()"><i class="fa fa-user"></i>Cont</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="shopping()"><i class="fa fa-shopping-cart"></i>Cos</p>
+            </div>
+        </div>
+        <div class="dropdown-cautare" id="dropdown-cautare">
+            <form action="#">
+                <input type="search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="dropdown-profil" id="dropdown-profil">
+            <form action="#">
+                <input type="search" placeholder="Nume">
+                <input type="text" placeholder="Prenume">
+                <button>Autentificare</button>
+            </form>
+        </div>
+        <div class="dropdown-cumparaturi" id="dropdown-cumparaturi">
+            <p>Nu exista produse</p>
+        </div>
+    </div>
+    <section>
+        <div class="body-photo">
+            <img src="images/photo.jpg" alt="foto mysport">
+        </div>
+        <div class="body-two">
+            <div class="row ">
+                <div class="body-coloane">
+                    <div class="col-1-of-5">
+                        <img src="https://cdn.veloteca.ro/homepage_beneficii/transport_gratuit_01.svg" alt="logo transport">
+                        <p>Transport Gratuit</p>
+                        <p>Peste 200 Ron este gratuit!</p>
+                    </div>
+                    <div class="col-1-of-5">
+                        <img src="https://cdn.veloteca.ro/homepage_beneficii/service_profesional_01.svg" alt="logo service">
+                        <p>Service profesional</p>
+                        <p>Mecanici cu experienta</p>
+                    </div>
+                    <div class="col-1-of-5">
+                        <img src="https://cdn.veloteca.ro/homepage_beneficii/vanzare_asistata_01.svg" alt="logo service">
+                        <p>Gama variata</p>
+                        <p>O selectie incredibila in stoc!</p>
+                    </div>
+                    <div class="col-1-of-5">
+                        <img src="https://cdn.veloteca.ro/homepage_beneficii/plata_in_rate_01.svg" alt="logo rate">
+                        <P>Plata in rate</P>
+                        <p>Pana la 12 rate fara dobanda</p>
+                    </div>
+                    <div class="col-1-of-5">
+                        <img src="https://cdn.veloteca.ro/homepage_beneficii/vanzare_asistata_01.svg" alt="logo vanzare">
+                        <P>Vanzare asistata</P>
+                        <p>De la priceputi pentru pasionati!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two-cards">
+            <div class="row">
+                <div class="rent-service">
+                    <div class="col-1-of-2">
+                        <div class="rentals">
+                            <a href="pages/inchirieri.html">Inchirieri biciclete</a>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="service">
+                            <a href="pages/service.html">Service de biciclete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="brands-span">
+                <p>Cea mai variata gama de branduri</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-1-of-6">
+                    <img src="images/shimano.jpg" alt="shimano-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/merida.jpg" alt="merida-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/garmin.jpg" alt="garmin-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/continental.jpg" alt="continental-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/northwave.jpg" alt="continental-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/cannondale.jpg" alt="continental-logo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-6">
+                    <img src="images/deuter.jpg" alt="shimano-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/cst.jpg" alt="merida-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/sigma.jpg" alt="garmin-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/bryton.jpg" alt="continental-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/giro.jpg" alt="continental-logo">
+                </div>
+                <div class="col-1-of-6">
+                    <img src="images/abus.jpg" alt="continental-logo">
+                </div>
+            </div>
+        </div>
+        <div class="three-cards">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card-ciclism">
+                        <p>Ciclism</p>
+                        <div class="card-1">
+                            <button><a href="pages/biciclete.html">Vezi produse</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card-alergare">
+                        <p>Alergare</p>
+                        <div class="card-1">
+                            <button><a href="pages/alergare.html">Vezi produse</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card-inot">
+                        <p>Inot</p>
+                        <div class="card-1">
+                            <button><a href="pages/inot.html">Vezi produse</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="produse-top">
+            <div class="row">
+                <div class="col-1-of-1">
+                    <div class="top">
+                        <h2>produse de top</h2>
+                        <hr>
+                        <img src="images/top.svg" alt="">
+                        <hr>
+                        <p>Descopera selectia noastra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="noutati">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="noutati-card">
+                        <img src="https://www.decathlon.ro/media/856/8561304/classic_1621503.jpg" alt="">
+                        <hr>
+                        <div class="noutati-text">
+                            <p>Bicicleta MTB Merida Juliet</p>
+                            <p>1200 RON</p>
+                        </div>
+                        <button><a href="#popup_1">Vezi detalii</a></button>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="noutati-card">
+                        <img src="https://www.decathlon.ro/media/840/8405350/classic_1569902.jpg" alt="">
+                        <hr>
+                        <div class="noutati-text">
+                            <p>Bicicleta MTB Romet Blauw</p>
+                            <p>2400 RON</p>
+                        </div>
+                        <button><a href="#popup_2">Vezi detalii</a></button>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="noutati-card">
+                        <img src="https://www.decathlon.ro/media/835/8350455/classic_765054.jpg" alt="">
+                        <hr>
+                        <div class="noutati-text">
+                            <p>Bicicleta MTB B'twin Kiprun</p>
+                            <p>2350 RON</p>
+                        </div>
+                        <button><a href="#popup_3">Vezi detalii</a></button>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="noutati-card">
+                        <img src="https://www.decathlon.ro/media/852/8527603/big_1636525.jpg" alt="">
+                        <hr>
+                        <div class="noutati-text">
+                            <p>Bicicleta MTB Rockrider 2.0</p>
+                            <p>8250 RON</p>
+                        </div>
+                        <button><a href="#popup_4">Vezi detalii</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="produse-top mysport">
+            <div class="row">
+                <div class="col-1-of-1">
+                    <div class="top txt-top">
+                        <hr>
+                        <h2>MySport</h2>
+                        <hr>
+                    </div>
+                    <h5>Facem sportul accesibil asigurând preţuri mici, dar şi o exigenţă ridicată privind calitatea produselor noastre. Graţie magazinelor noastre simple, logisticii optimizate, a organizării eficiente şi a implicării permanente pentru reducerea
+                        costurilor reuşim să reducem preţurile produselor noastre. Facem sportul accesibil printr-o gamă largă de produse care răspund tuturor nevoilor sportivilor graţie mărcilor internaţionale. La MySport inovăm în orice activitate:
+                        de la cercetare la vânzare, la concepţie, design, producţie şi logistică. Echipele celor 20 de Mărci Pasiune îşi pun toată energia şi talentul în slujba conceperii de produse tehnice, frumoase şi simple, întotdeauna la cel mai
+                        mic preţ posibil. Produsele noastre exclusive se adresează tuturor sportivilor, de la debutanţi la avansaţi.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <hr>
+            <p>Nu pierde noutățile și ofertele! Fii conectat la noutățile MySport.</p>
+            <p>Abonează-te la newsletter-ul nostru.</p>
+            <form action="newsletter.php">
+                <input type="email" nume="email" id="email" placeholder="E-mail-ul tau...">
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+        <div class="logo">
+            <div class="row">
+                <div class="col-1-of-5">
+                    <img src="images/info1.png" alt="shimano-logo">
+                </div>
+                <div class="col-1-of-5">
+                    <img src="images/info2.png" alt="merida-logo">
+                </div>
+                <div class="col-1-of-5">
+                    <img src="images/info3.png" alt="garmin-logo">
+                </div>
+                <div class="col-1-of-5">
+                    <img src="images/info4.png" alt="continental-logo">
+                </div>
+                <div class="col-1-of-5">
+                    <img src="images/info5.png" alt="continental-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="popup" id="popup_1">
+        <div class="popup-content">
+            <div class="row">
+                <div class="title">
+                    <h4>Bicicleta MTB Merida Juliet</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p>1200 RON</p>
+                    <span><a href="#close"><i class="fa fa-times"></i></a></span>
+                </div>
+                <div class="col-1-of-3">
+                    <img src="https://www.decathlon.ro/media/840/8405309/big_1591324.jpg" alt="" class="popup_img">
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>specificatii tehnice</caption>
+                        <tbody>
+                            <tr>
+                                <th>Cadru</th>
+                                <td>Aluminiu</td>
+                            </tr>
+                            <tr>
+                                <th>Furca</th>
+                                <td>Suntour XCM HLO; Coil; 100 STR; Lockout</td>
+                            </tr>
+                            <tr>
+                                <th>Cursa furca</th>
+                                <td>100 mm</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator fata</th>
+                                <td>Shimano M3000</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator spate</th>
+                                <td>Shimano Alivio</td>
+                            </tr>
+                            <tr>
+                                <th>Manete schimbator</th>
+                                <td>Shimano altus</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>Informatii Bicicleta</caption>
+                        <tbody>
+                            <tr>
+                                <th>producator</th>
+                                <td>Merida</td>
+                            </tr>
+                            <tr>
+                                <th>Serie Bicicleta</th>
+                                <td>Julieta</td>
+                            </tr>
+                            <tr>
+                                <th>anul modelului</th>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <th>Marime disponibila</th>
+                                <td>L ( 520 mm )</td>
+                            </tr>
+                            <tr>
+                                <th>Culoare</th>
+                                <td>Neagra</td>
+                            </tr>
+                            <tr>
+                                <th>Numar viteze</th>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th>Tip frana</th>
+                                <td>V-Brake</td>
+                            </tr>
+                            <tr>
+                                <th>Marime roti</th>
+                                <td>27.5 inch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button>adauga in cos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup_2">
+        <div class="popup-content">
+            <div class="row">
+                <div class="title">
+                    <h4>Bicicleta MTB Romet Blauw</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p>2400 RON</p>
+                    <span><a href="#close"><i class="fa fa-times"></i></a></span>
+                </div>
+                <div class="col-1-of-3">
+                    <img src="https://www.decathlon.ro/media/840/8405350/classic_1569902.jpg" alt="" class="popup_img">
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>specificatii tehnice</caption>
+                        <tbody>
+                            <tr>
+                                <th>Cadru</th>
+                                <td>Aluminiu</td>
+                            </tr>
+                            <tr>
+                                <th>Furca</th>
+                                <td>Suntour MX LDO; Coil; 200 STR; Lockout</td>
+                            </tr>
+                            <tr>
+                                <th>Cursa furca</th>
+                                <td>120 mm</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator fata</th>
+                                <td>Shimano L30</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator spate</th>
+                                <td>Shimano Olive</td>
+                            </tr>
+                            <tr>
+                                <th>Manete schimbator</th>
+                                <td>Shimano altus</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>Informatii Bicicleta</caption>
+                        <tbody>
+                            <tr>
+                                <th>producator</th>
+                                <td>Romet</td>
+                            </tr>
+                            <tr>
+                                <th>Serie Bicicleta</th>
+                                <td>Blauw</td>
+                            </tr>
+                            <tr>
+                                <th>anul modelului</th>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <th>Marime disponibila</th>
+                                <td>M ( 480 mm )</td>
+                            </tr>
+                            <tr>
+                                <th>Culoare</th>
+                                <td>Neagra</td>
+                            </tr>
+                            <tr>
+                                <th>Numar viteze</th>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <th>Tip frana</th>
+                                <td>Disc mecanic</td>
+                            </tr>
+                            <tr>
+                                <th>Marime roti</th>
+                                <td>29 inch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button>adauga in cos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup_3">
+        <div class="popup-content">
+            <div class="row">
+                <div class="title">
+                    <h4>Bicicleta MTB B'twin Kiprun</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p>2350 RON</p>
+                    <span><a href="#close"><i class="fa fa-times"></i></a></span>
+                </div>
+                <div class="col-1-of-3">
+                    <img src="https://www.decathlon.ro/media/835/8350455/classic_765054.jpg" alt="" class="popup_img">
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>specificatii tehnice</caption>
+                        <tbody>
+                            <tr>
+                                <th>Cadru</th>
+                                <td>Aluminiu</td>
+                            </tr>
+                            <tr>
+                                <th>Furca</th>
+                                <td>Suntour RMO; Coil; 100 Power; Locked</td>
+                            </tr>
+                            <tr>
+                                <th>Cursa furca</th>
+                                <td>140 mm</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator fata</th>
+                                <td>Shimano ST11</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator spate</th>
+                                <td>Shimano Ono</td>
+                            </tr>
+                            <tr>
+                                <th>Manete schimbator</th>
+                                <td>Shimano Rondo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>Informatii Bicicleta</caption>
+                        <tbody>
+                            <tr>
+                                <th>producator</th>
+                                <td>B'twin</td>
+                            </tr>
+                            <tr>
+                                <th>Serie Bicicleta</th>
+                                <td>Kiprun</td>
+                            </tr>
+                            <tr>
+                                <th>anul modelului</th>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <th>Marime disponibila</th>
+                                <td>S ( 400 mm )</td>
+                            </tr>
+                            <tr>
+                                <th>Culoare</th>
+                                <td>Alba</td>
+                            </tr>
+                            <tr>
+                                <th>Numar viteze</th>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th>Tip frana</th>
+                                <td>Disc hidraulic</td>
+                            </tr>
+                            <tr>
+                                <th>Marime roti</th>
+                                <td>26 inch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button>adauga in cos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup_4">
+        <div class="popup-content">
+            <div class="row">
+                <div class="title">
+                    <h4>Bicicleta MTB Rockrider Advanced 2.0</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p>8250 RON</p>
+                    <span><a href="#close"><i class="fa fa-times"></i></a></span>
+                </div>
+                <div class="col-1-of-3">
+                    <img src="https://www.decathlon.ro/media/852/8527603/big_1636525.jpg" alt="" class="popup_img">
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>specificatii tehnice</caption>
+                        <tbody>
+                            <tr>
+                                <th>Cadru</th>
+                                <td>Cabron</td>
+                            </tr>
+                            <tr>
+                                <th>Furca</th>
+                                <td>ROCKSHOX SID RL, ax BOOST</td>
+                            </tr>
+                            <tr>
+                                <th>Cursa furca</th>
+                                <td>100 mm</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator fata</th>
+                                <td>Shimano XLC 22-203</td>
+                            </tr>
+                            <tr>
+                                <th>Schimbator spate</th>
+                                <td>Shimano Nirmo</td>
+                            </tr>
+                            <tr>
+                                <th>Manete schimbator</th>
+                                <td>Shimano Jack</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-1-of-3">
+                    <table>
+                        <caption>Informatii Bicicleta</caption>
+                        <tbody>
+                            <tr>
+                                <th>producator</th>
+                                <td>Rockrider</td>
+                            </tr>
+                            <tr>
+                                <th>Serie Bicicleta</th>
+                                <td>Advanced 2.0</td>
+                            </tr>
+                            <tr>
+                                <th>anul modelului</th>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <th>Marime disponibila</th>
+                                <td>L ( 520 mm )</td>
+                            </tr>
+                            <tr>
+                                <th>Culoare</th>
+                                <td>Neagra</td>
+                            </tr>
+                            <tr>
+                                <th>Numar viteze</th>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th>Tip frana</th>
+                                <td>Disc hidraulic</td>
+                            </tr>
+                            <tr>
+                                <th>Marime roti</th>
+                                <td>29 inch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button>adauga in cos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <p onclick="informatii()">Informatii Utile <i class="fa fa-angle-down"></i></p>
+                    <ul id="informatii-utile">
+                        <lI><a href="pages/contact.html">Contact</a></lI>
+                        <li><a href="pages/cumplatesc.html">Cum platesc</a></li>
+                        <li><a href="pages/garantii.html">Garantii oferite</a></li>
+                        <li><a href="pages/livrare-retur.html">Livrare si retur</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="termeni()">Termeni legali <i class="fa fa-angle-down"></i></p>
+                    <ul id="termeni-legali">
+                        <li><a href="pages/termeni-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="https://www.dataprotection.ro/?page=Responsabilul_cu_protectia_datelor" target="_blank">Prelucrarea datelor cu caracter personal</a></li>
+                        <li><a href="http://www.anpc.gov.ro/" target="_blank">A.n.p.c</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="follow()">Follow us <i class="fa fa-angle-down"></i></p>
+                    <div id="follow" class="follow">
+                        <div class="icon-follow">
+                            <i class="fa fa-facebook"></i>
+                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-instagram"></i>
+                            <a href="http://www.instagram.com" target="_blank">Instagram</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-youtube"></i>
+                            <a href="http://www.youtube.com" target="_blank">Youtube</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-google"></i>
+                            <a href="http://www.google.com">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <span>Copyright © Vlad Frunza 2019. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

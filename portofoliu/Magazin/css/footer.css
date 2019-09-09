@@ -1,0 +1,52 @@
+.informatii-footer img {
+    margin-top: 2rem;
+}
+.brd {
+    float: right;
+}
+.alpha {
+    float: right;
+}
+.bt {
+    float: right;
+    margin-bottom: 2rem;
+}
+.informatii-footer h3 {
+    padding: 2rem 0;
+    color: rgb(31, 200, 219);
+}
+.informatii-footer h4 {
+    padding: 1rem 0;
+    color: rgb(31, 200, 219);
+}
+.informatii-footer p {
+    padding-bottom: 0.5rem;
+}
+.informatii-footer h3:first-child {
+    padding-top: 6rem;
+    font-size: 2rem;
+}
+.informatii-footer {
+    padding-bottom: 6rem;
+}
+.informatii-footer li {
+    list-style-position: inside;
+}
+.informatii-footer a {
+    color: red;
+}
+.informatii-footer b {
+    color: red;
+}
+
+@media (max-width: 1024px) {
+    .informatii-footer {
+        padding: 2rem;
+   }
+}
+@media (max-width: 576px) {
+    .informatii-footer img {
+        width: 100%;
+   }
+}
+

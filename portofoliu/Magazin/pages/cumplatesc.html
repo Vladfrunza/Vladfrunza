@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|PT+Serif:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <script src="../javascript/script.js"></script>
+    <title>MySport</title>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>e-mail: mysport@yahoo.com</p>
+            </div>
+            <div class="col-1-of-2">
+                <p>Call center: 0223225255</p>
+            </div>
+        </div>
+    </div>
+    <div class="head-top">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="top-left">
+                    <a href="../index.html"><img class="img-head" src="../images/logo.png" alt="logo mysport"></a>
+                    <span>MySport</span>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="top-search">
+                    <form action="search.php">
+                        <input type="text" placeholder="Cautare.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="top-right">
+                    <div class="dropdown-cart" id="dropdown-cart">
+                        <i class="fa fa-shopping-cart" onclick="dropdownCart()"></i>
+                        <div class="dropdown-cart-empty" id="dropdown-cart-empty">
+                            <p>Nu ai produse in cos</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-cont">
+                        <i class="fa fa-caret-down"></i>
+                        <span class="dropdown-span" onclick="dropdownCont()">Contul Meu</span>
+                        <div class="dropdown-cont-body" id="dropdown-cont-body">
+                            <p>Utilizator</p>
+                            <input type="text" name="utilizator" placeholder="utilizator" value="" />
+                            <p>Parola</p>
+                            <input type="password" name="parola" placeholder="parola" value="" />
+                            </br>
+                            <button>Autentificare</button>
+                            <div class="cont-nou">
+                                <p><a href="#">Recuperare parola</a></p>
+                                <p><a href="#">Nu ai cont?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="row">
+            <p>CEL MAI MIC PRET !</p>
+            <p>Transport gratuit de la 499,9 Ron </p>
+            <p>*Daca gasesti in alta parte mai ieftin, primesti 2x diferenta</p>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul>
+                    <li><a href="biciclete.html" class="ciclism">Ciclism</a></li>
+                    <li><a href="alergare.html" class="alergare">Alergare</a></li>
+                    <li><a href="inot.html" class="inot">Inot</a> </li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="button-contact">
+                    <div class="button-contact-primary">
+                        <ul>
+                            <li class="contact-btn" onclick="contact()">CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-contact" id="dropdown-contact">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-phone"></i> Info:</p>
+                                <p>021.311.825</p>
+                                <p class="contact"><i class="fa fa-calendar"></i> Program:</p>
+                                <p>Luni-Vineri: 10-20</p>
+                                <p>Sambata:10-16</p>
+                                <p>Duminica: inchis</p>
+                                <p class="contact"><i class="fa fa-address-card"></i> Adresa:</p>
+                                <p>Musatini nr 3, Iasi</p>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-envelope"></i>E-mail</p>
+                                <p>mysport@yahoo.com</p>
+                                <p class="contact"><i class="fa fa-wrench"></i>Service</p>
+                                <p>072606300</p>
+                                <p>*La service este necesara programare</p>
+                                <button><a href="contact.html">Detalii</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-tab">
+        <div class="row">
+            <div class="col-1-of-4 ">
+                <div class="nav-mobile" onclick="toggle()">
+                    <div class="nav-toggle">
+                        <div class="nav-toggle-bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="../index.html">Acasa</a></li>
+                            <li><a href="biciclete.html">Ciclism</a></li>
+                            <li><a href="alergare.html">Alergare</a></li>
+                            <li><a href="inot.html">Inot</a></li>
+                            <li><a href="contact.html">CONTACT</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p id='meniu'>Meniu</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="cautare()"><i class="fa fa-search"></i>Cauta</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="profil()"><i class="fa fa-user"></i>Cont</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="shopping()"><i class="fa fa-shopping-cart"></i>Cos</p>
+            </div>
+        </div>
+        <div class="dropdown-cautare" id="dropdown-cautare">
+            <form action="#">
+                <input type="search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="dropdown-profil" id="dropdown-profil">
+            <form action="#">
+                <input type="search" placeholder="Nume">
+                <input type="text" placeholder="Prenume">
+                <button>Autentificare</button>
+            </form>
+        </div>
+        <div class="dropdown-cumparaturi" id="dropdown-cumparaturi">
+            <p>Nu exista produse</p>
+        </div>
+    </div>
+    <div class="informatii-footer">
+        <div class="row">
+            <h3> MODALITĂŢI DE PLATĂ, PREŢURI ŞI PROMOŢII</h3>
+            <p>Toate preţurile afişate pe website includ TVA şi nu conţin alte taxe. Pentru produsele cu preţ special, va fi afişat atât preţul vechi cât şi preţul nou, cel rezultat în urma reducerii.</p>
+            <p>Modalităţile de plată acceptate în prezent sunt următoarele:</p>
+            <h3>Plata la Livrare</h3>
+            <p>Semnifică plata prin sistem ramburs la primirea coletului. În momentul în care curierul vă livrează marfa comandată, veţi preda acestuia suma corespunzătoare comenzii. Valoarea rambursului va fi cea comunicată în momentul comenzii şi va fi
+                trecută pe documentul de însoţire a mărfii (AWB).</p>
+            <h3>Virament bancar</h3>
+            <p>Dupa efectuarea cu succes a comenzii online veti primi pe adresa de e-mail confirmarea comenzii insotita de conturile noastre bancare unde se poate face plata. Comanda va fi expediata dupa ce suma de bani va intra integral in unul din conturi.</p>
+            <h3>Plata la Termen</h3>
+            <p>Se accepta plata la termen pentru institutiile care au initiat procedura de comanda folosind sistemul electronic de licitatii publice (SEAP) si a caror comanda a fost confirmata.</p>
+            <p>Se accepta plata la termen pe baza contractului de furnizare pentru persoanele juridice care folosesc instrumente de plata de tip CEC sau Bilet la Ordin reglementate pe teritoriul Romaniei sau care fac parte din categoria clienti-furnizori.</p>
+            <h3>Online cu card bancar prin EuPlatesc (Visa/Maestro/Mastercard)</h3>
+            <p>Daca ati ales metoda de plata „Online prin card bancar” este necesar sa completati un formular cu informatiile despre cardul dumneavoastra in pagina securizata a procesatorului de plati.</p>
+            <p>– Platile cu carduri de credit/debit emise sub sigla Visa si MasterCard (Visa/Visa Electron si MasterCard/Maestro)</p>
+            <p>se efectuaeaza prin intermediul sistemului „3-D Secure” elaborat de organizatiile care asigura tranzactiilor on-line acelasi nivel de securitate ca cele realizate la bancomat sau in mediul fizic, la comerciant.</p>
+            <p>– „3-D Secure” asigura in primul rand ca nici o informatie legata de cardul dumneavoastra nu este transferata sau stocata,</p>
+            <p>la nici un moment de timp, pe serverele magazinului sau pe serverele procesatorului de plati, aceste date fiind direct introduse in sistemele Visa si MasterCard.</p>
+            <img class="hidden" src="https://www.magazinsportiv.com/wp-content/uploads/2014/10/online-visa-mastercard.png" alt="">
+            <h3>Online in rate egale fara dobanda prin card de cumparaturi</h3>
+            <p>Dupa ce veti introduce numarul de card in pagina procesatorului de plati, sistemul va detecta automat daca este un card eligibil pentru plata in rate, la una din bancile agreate de catre magazin si va afisa o lista de unde puteti alege numarul
+                de rate dorit:</p>
+            <img src="https://www.magazinsportiv.com/wp-content/uploads/2014/10/img-carduri-VISAMasterCard-STANDARD_site-suprapuse_198x106px.jpg" alt="" class="brd">
+            <h3>Prin card de credit emis de BCR:</h3>
+            <p>E usor sa faci cumparaturi cand ai CARDUL BUN DE PLATA de la BCR ! Ai RATE fara dobândă si bani inapoi!</p>
+            <p>Plateste prin cardul tau de credit BCR pe mysport.com si beneficiezi de oferta standard de pana la 4 rate fara dobanda! Mai mult, primesti anual 1% bani inapoi.</p>
+            <p>Cine poate plati in rate? Sunt înscrişi automat şi gratuit toţi clienţii care deţin unul dintre cardurile de credit BCR înrolate în Program şi care, la momentul efectuării tranzacţiei la comercianţii parteneri ai BCR, solicită facilitatea
+                „Rate fără dobândă”. Cardurile de credit BCR înrolate în Programul de Rate cu 0% dobândă sunt:</p>
+            <p>• BUN DE PLATA Standard MasterCard sau Visa (inclusiv contactless)</p>
+            <p>• BUN DE PLATA Gold MasterCard sau Visa</p>
+            <p>• MasterCard GOLD EUR</p>
+            <p>• BCR Wizz Air MasterCard</p>
+            <p>• EPB Platinum sau World Signia MasterCard</p>
+            <p>Pentru a plati online cu cardul, in procesul de comanda selectati optiunea de plata „Online prin card bancar” si numarul de rate dorit. Platile online sunt procesate direct de catre banca emitenta, Banca Comerciala Romana prin intermediul
+                platformei EuPlatesc. Sistemul de plata este securizat la cele mai inalte standarde, inclusiv 3D Secure.</p>
+            <p>Vrei si tu cardul BUN DE PLATA de la BCR?</p>
+            <p>• Aplica acum pe www.bundeplata.ro sau</p>
+            <p>• Trimite SMS la 1780, tarif normal, cu textul “Card” şi vei fi contactat de catre un operator bancar sau</p>
+            <p>• Apeleaza gratuit, non-stop, din orice reţea naţională InfoBCR la numarul 0800.801.BCR (0800.801.227)</p>
+            <p>Spor la cumparaturi!</p>
+            <h3>Prin card de credit emis de Alpha Bank</h3>
+            <img src="https://www.magazinsportiv.com/wp-content/uploads/2014/10/314x235-300x224.jpg" alt="" class="alpha">
+            <p>Optiunea de plata in rate cu 0% dobanda prin cardul tau de cumparaturi de la Alpha Bank (VISA CREDIT, VISA GOLD, COSMOTE MASTERCARD, MASTERCARD CREDIT)</p>
+            <p>Noul serviciu oferit de Alpha Bank permite detinatorilor de carduri de cumparaturi in lei emise de banca sa beneficieze de o solutie de plata in rate flexibila pentru bunurile/serviciile achizitionate cu cardurile de cumparaturi de la comerciantii
+                afiliati acestui serviciu.</p>
+            <p>Confort – pentru optiunea de plata in rate nu este nevoie sa aplici, sa programezi in avans sau sa faci rost de documente suplimentare. Trebuie doar sa soliciti plata bunurilor cu cardul tau de cumparaturi de la Alpha Bank in numarul de rate
+                dorit si permis de comerciantii parteneri.</p>
+            <p>Convenabil – bunuri achizitionate prin optiunea de plata in rate cu cardul fara dobanda. Pentru bunurile astfel achizitionate, pentru a beneficia de 0% dobanda, trebuie sa platesti lunar rata aferenta, egala cu costul bunurilor impartit la
+                numarul de luni ales pentru plata. Daca sunt efectuate si alte tipuri de tranzactii, este necesara plata in intregime a sumei lunare datorate pentru a beneficia de dobanda 0%.</p>
+            <p>Flexibilitate – poti folosi plata in rate ori de cate ori doresti in limita liniei de credit aferenta cardului tau. Pe masura ce rambursezi ratele lunare, sumele rambursate devin din nou disponibile pe contul tau de card.</p>
+            <p>Libertate – esti liber sa folosesti plata in rate in orice magazin partener; ai libertatea sa alegi numarul de rate care ti se potriveste cel mai bine din maximul permis; Extrasul de cont de card emis lunar iti va arata de fiecare data ce
+                rata trebuie sa platesti pentru luna curenta si suma ratelor viitoare ramase de platit, iar prin serviciul de debitare directa poti alege ca suma totala datorata sau suma minima de plata, sa fie rambursata automat din contul tau curent
+                deschis la banca, in aceeasi valuta cu cea a cardului.”</p>
+            <h3>Prin card de credit emis de Banca Transilvania</h3>
+            <p>Folosind cardul de credit de la Banca Transilvania, prin programul Star BT beneficiezi de rate fara dobanda pentru orice cumparatura efectuata in magazinul online.</p>
+            <p>Daca detii un card Star BT emis de Banca Transilvania, poti achita in 2 pana la 4 rate egale fara dobânda.</p>
+            <img src="https://www.magazinsportiv.com/wp-content/uploads/2014/10/Star-BT.png" alt="" class="bt">
+            <p>Sunt incluse in program cardurile de credit MasterCard Forte, MasterCard Forte pentru Medici, Visa Gold, Visa Gold BT-Rotary si Visa Platinum.</p>
+            <p>Pentru aceasta tranzactie nu ti se va percepe nici un comision.
+                <P>Afla mai multe despre programul Star BT pe www.starbt.ro.</p>
+                <p>In cazul în care aveţi nelămuriri sau întrebări, vă stăm la dispoziţie aici 0740045242 sau contact www.mysport.com.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <p onclick="informatii()">Informatii Utile <i class="fa fa-angle-down"></i></p>
+                    <ul id="informatii-utile">
+                        <lI><a href="contact.html">Contact</a></lI>
+                        <li><a href="cumplatesc.html">Cum platesc</a></li>
+                        <li><a href="garantii.html">Garantii oferite</a></li>
+                        <li><a href="livrare-retur.html">Livrare si retur</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="termeni()">Termeni legali <i class="fa fa-angle-down"></i></p>
+                    <ul id="termeni-legali">
+                        <li><a href="termeni-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="https://www.dataprotection.ro/?page=Responsabilul_cu_protectia_datelor" target="_blank">Prelucrarea datelor cu caracter personal</a></li>
+                        <li><a href="http://www.anpc.gov.ro/" target="_blank">A.n.p.c</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="follow()">Follow us <i class="fa fa-angle-down"></i></p>
+                    <div id="follow" class="follow">
+                        <div class="icon-follow">
+                            <i class="fa fa-facebook"></i>
+                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-instagram"></i>
+                            <a href="http://www.instagram.com" target="_blank">Instagram</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-youtube"></i>
+                            <a href="http://www.youtube.com" target="_blank">Youtube</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-google"></i>
+                            <a href="http://www.google.com">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <span>Copyright © Vlad Frunza 2019. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

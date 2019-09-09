@@ -1,0 +1,60 @@
+
+/* GENERAL */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif!important;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/*==========navbar=========*/
+
+nav img{ height: 2.5rem; }
+
+.nav-link:hover{
+ 	background: white;
+ 	color: #007bff!important;
+ 	border-radius: 5px;
+ }
+
+.active{ border-radius: 5px; }
+
+ /*=========carousel========*/
+
+ .carousel-inner img{
+ 	height: 600px;
+ 	width: 600px;
+ }
+
+/*========== MARGINS & PADDINGS ========*/
+
+.monastery img{
+	height: 320px;
+	width: 320px;
+}
+
+/*========== PAGE II =======*/
+.img img{
+	height: 250px!important;
+	width: 250px!important;
+}
+
+
+/*======== PAGE III ======*/
+.card img{
+	height: 250px;
+	width:350px;	
+}
+
+.harta img{ height: 75vh; }
+
+/*======= PAG V ======*/
+
+.nav-item .active{
+	background: white!important;
+	color: mediumblue!important;
+}

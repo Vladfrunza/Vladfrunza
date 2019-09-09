@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|PT+Serif:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <script src="../javascript/script.js"></script>
+    <title>MySport</title>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>e-mail: mysport@yahoo.com</p>
+            </div>
+            <div class="col-1-of-2">
+                <p>Call center: 0223225255</p>
+            </div>
+        </div>
+    </div>
+    <div class="head-top">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="top-left">
+                    <a href="../index.html"><img class="img-head" src="../images/logo.png" alt="logo mysport"></a>
+                    <span>MySport</span>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="top-search">
+                    <form action="search.php">
+                        <input type="text" placeholder="Cautare.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="top-right">
+                    <div class="dropdown-cart" id="dropdown-cart">
+                        <i class="fa fa-shopping-cart" onclick="dropdownCart()"></i>
+                        <div class="dropdown-cart-empty" id="dropdown-cart-empty">
+                            <p>Nu ai produse in cos</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-cont">
+                        <i class="fa fa-caret-down"></i>
+                        <span class="dropdown-span" onclick="dropdownCont()">Contul Meu</span>
+                        <div class="dropdown-cont-body" id="dropdown-cont-body">
+                            <p>Utilizator</p>
+                            <input type="text" name="utilizator" placeholder="utilizator" value="" />
+                            <p>Parola</p>
+                            <input type="password" name="parola" placeholder="parola" value="" />
+                            </br>
+                            <button>Autentificare</button>
+                            <div class="cont-nou">
+                                <p><a href="#">Recuperare parola</a></p>
+                                <p><a href="#">Nu ai cont?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="row">
+            <p>CEL MAI MIC PRET !</p>
+            <p>Transport gratuit de la 499,9 Ron </p>
+            <p>*Daca gasesti in alta parte mai ieftin, primesti 2x diferenta</p>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul>
+                    <li><a href="biciclete.html" class="ciclism">Ciclism</a></li>
+                    <li><a href="alergare.html" class="alergare">Alergare</a></li>
+                    <li><a href="inot.html" class="inot">Inot</a> </li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="button-contact">
+                    <div class="button-contact-primary">
+                        <ul>
+                            <li class="contact-btn" onclick="contact()">CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-contact" id="dropdown-contact">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-phone"></i> Info:</p>
+                                <p>021.311.825</p>
+                                <p class="contact"><i class="fa fa-calendar"></i> Program:</p>
+                                <p>Luni-Vineri: 10-20</p>
+                                <p>Sambata:10-16</p>
+                                <p>Duminica: inchis</p>
+                                <p class="contact"><i class="fa fa-address-card"></i> Adresa:</p>
+                                <p>Musatini nr 3, Iasi</p>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-envelope"></i>E-mail</p>
+                                <p>mysport@yahoo.com</p>
+                                <p class="contact"><i class="fa fa-wrench"></i>Service</p>
+                                <p>072606300</p>
+                                <p>*La service este necesara programare</p>
+                                <button><a href="contact.html">Detalii</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-tab">
+        <div class="row">
+            <div class="col-1-of-4 ">
+                <div class="nav-mobile" onclick="toggle()">
+                    <div class="nav-toggle">
+                        <div class="nav-toggle-bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="../index.html">Acasa</a></li>
+                            <li><a href="biciclete.html">Ciclism</a></li>
+                            <li><a href="alergare.html">Alergare</a></li>
+                            <li><a href="inot.html">Inot</a></li>
+                            <li><a href="contact.html">CONTACT</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p id='meniu'>Meniu</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="cautare()"><i class="fa fa-search"></i>Cauta</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="profil()"><i class="fa fa-user"></i>Cont</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="shopping()"><i class="fa fa-shopping-cart"></i>Cos</p>
+            </div>
+        </div>
+        <div class="dropdown-cautare" id="dropdown-cautare">
+            <form action="#">
+                <input type="search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="dropdown-profil" id="dropdown-profil">
+            <form action="#">
+                <input type="search" placeholder="Nume">
+                <input type="text" placeholder="Prenume">
+                <button>Autentificare</button>
+            </form>
+        </div>
+        <div class="dropdown-cumparaturi" id="dropdown-cumparaturi">
+            <p>Nu exista produse</p>
+        </div>
+    </div>
+    <div class="informatii-footer">
+        <div class="row">
+            <h3>TERMENI SI CONDITII</h3>
+            <p>Următoarele reguli stabilesc politica de confidenţialitate adoptată de www.mysport.ro . Aceasta politică explică în ce mod utilizăm noi orice tip de informaţie personală pe care ne-o puteţi oferi pe parcursul utilizării website-ului sau plasării
+                unei comenzi online.</p>
+            <p>Informaţiile personale înseamnă orice tip de informaţie care vă identifică pe dvs în nume personal (de exemplu numele dvs, adresa, e-mailul). Informaţiile oferite în momentul când vă înregistraţi sunt folosite la accesarea funcţionalităţilor
+                create special pentru clienţii înregistraţi, cum ar fi reutilizarea adreselor deja salvate, posibilitatea de a vedea istoricul comenzilor anterioare, posibilitatea de a primi cupoane promoţionale în functie de comenziile deja efectuate
+                etc.</p>
+            <p>În eventualitatea în care vindem sau înstrăinăm într-un alt mod o fracţiune sau întregul nostru business către o altă entitate, ne rezervăm dreptul de a transfera informaţia dumneavoastră ca parte a oricăror active vândute sau disponibilizate.</p>
+            <p>Colectăm informaţiile de la clienţi pentru a putea onora comenzile şi pentru a servi cât mai bine clienţii noştri cu informaţii complete referitoare la starea comenzilor sau a livrării. Informaţiile colectate includ: numele, adresa de livrare,
+                adresa de facturare, numerele de telefon, adresa de e-mail. Informaţiile referitoare la cardurile de credit nu vor fi colectate sau salvate de către site-ul www.mysport.ro . Email-ul şi parola sunt date colectate cu scopul autentificării
+                clientului pe site. Toate datele colectate sunt stocate şi criptate după caz (parola) folosind metode avansate de securizare. In plus avem proceduri de securitate care acoperă stocarea şi divulgarea informaţiilor dumneavoastră, pentru
+                a preveni accesul neautorizat şi pentru a acţiona în concordanţă cu legislaţia din România referitoare la protejarea datelor. Pentru o mai mare siguranţă, în unele cazuri este posibil să vă cerem să faceţi dovada identităţii dumneavoastră
+                înainte de a va dezvălui anumite informaţii personale.</p>
+            <p>Vom încerca să vă informăm dacă apar schimbări în politica noastră de confidenţialitate care pot afecta modul în care utilizăm informaţia furnizată de dvs. Cu toate acestea, noi îi încurajăm pe utilizatori să fie responsabili în ceea ce priveşte
+                confidenţialitatea datelor personale şi să verifice regulile stipulate de această politică, pentru a-şi reactualiza preferinţele.</p>
+            <h4>Plata şi livrarea</h4>
+            <p>Orice comandă plasată prin intermediul site-ului www.magazinsportiv.com are valoare contractuală.</p>
+            <p>Livrarea produselor se face prin firma de curierat rapid Urgent Courier. Cheltuielile de transport le suportă clientul, însă vor fi specificate în factura finală, afişată după plasarea comenzii sau în contul dvs. Livrarea se va realiza în
+                intervalul 24-48 de ore de la confirmarea comenzii, exceptând zilele de Sâmbătă şi Duminică, precum şi sărbătorile legale.</p>
+            <p>Eventualele întârzieri ale curierului pot apărea dacă pe traseu apar probleme (inundaţii, ninsori etc) sau dacă zona de livrare este pe o rută exterioară zonei de acoperire a curierului. În cazuri excepţionale, dacă produsul comandat nu se
+                află pe stoc în momentul comenzii, veţi fi anunţat de operatorii noştri în cât timp acesta va putea ajunge la dvs. Sâmbăta şi Duminica nu se fac livrări. Costurile transportului şi preţurile produselor pot fi modificate fără o notificare
+                prealabilă.</p>
+            <p>Înainte de a comanda un produs, verificaţi dacă acesta se află pe stoc. Produsele care nu se află momentan pe stoc nu pot fi livrate clienţilor. Comenzile respective pot fi păstrate termen de o lună de zile, la solicitarea clientului şi se
+                livrează în momentul în care apar produsele respective pe stoc. Dacă în termen de o lună nu se pot onora, aceste comenzi vor fi considerate anulate, fără o altă notificare. Dacă clientul nu precizează că aceste comenzi să fie păstrate,
+                acestea vor fi considerate nule.</p>
+            <h4>Responsabilităţi privind produsele</h4>
+            <p>Companiile, produsele sau serviciile menţionate în articolele publicate sunt mărci înregistrate ale companiilor respective. Utilizarea oricărui nume de marcă înregistrată este realizată doar în scopul analizei şi nu constituie reclamă pentru
+                compania respectivă.</p>
+            <p>www.mysport.ro nu garantează că descrierea produselor sau orice alt articol al site-ului este lipsit de erori sau că este complet.</p>
+            <p>www.mysport.com nu va putea fi făcut responsabil în cazul oricăror neconcordanţe sau lipsuri în ceea ce priveşte produsele, calitatea acestora sau orice alte aspecte privind aceste produse</p>
+            <p>Stocurile de produse afişate pe site nu se pot actualiza zilnic, de aceea pentru confirmarea existenţei unui produs pe stoc, veţi fi contactat telefonic. Se poate întampla ca pe site produsul să fie marcat ca existent pe stoc, dar din cauza
+                fluxului de vânzări acesta să nu mai existe în realitate.></p>
+            <p>Imaginile care sunt prezentate pe site sunt exemplificative, produsele efectiv livrate pot diferi de acestea în ceea ce priveşte culoarea, aspectul etc. www.mysport.ro nu garantează, de asemenea, nici disponibilitatea în stoc a produselor
+                afişate.</p>
+            <p>Preţurile produselor pot fi modificate. Dacă există comenzi în curs de desfăşurare se va respecta preţul de comandă sau după informarea telefonică a clientului despre noul preţ, acesta poate sau nu să păstreze comanda.</p>
+            <h4>Returul produselor</h4>
+            <h4>Conform legislaţiei din România puteţi să returnaţi produsele cumpărate de pe magazinsportiv.com în termen de 14 zile de la cumpărarea lor.</h4>
+            <p>Mai multe informaţii găsiţi aici: </p>
+            <p><a href="http://www.legi-internet.ro/index.php?id=59"> Ordonanţa nr. 130/2000 privind regimul juridic al contractelor la distanţă</a></p>
+            <p><a href="http://www.legi-internet.ro/index.php?id=61"> Lege nr. 51 din 21/01/2003 pentru aprobarea Ordonanţei Guvernului nr. 130/2000 privind regimul juridic al contractelor la distanţă</a></p>
+            <h3>Ce trebuie să ştiţi:</h3>
+            <p>Produsul trebuie returnat în ambalajul original, cu toate componentele, accesoriile şi documentele de care dispune şi cu care a fost expediat de magazinul nostru.</p>
+            <p>Deteriorarea produselor sau punerea într-o stare de nevandabilitate duce la refuzarea returului. Costul de transport pentru returnarea produsului este suportat de către cumpărător.</p>
+            <p>În cazul în care returnarea se face din cauza unor defecte de fabricaţie sau deteriorări în timpul transportului vă rugăm să ne contactaţi în maxim 24 de ore de la primirea coletului.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <p onclick="informatii()">Informatii Utile <i class="fa fa-angle-down"></i></p>
+                    <ul id="informatii-utile">
+                        <lI><a href="contact.html">Contact</a></lI>
+                        <li><a href="cumplatesc.html">Cum platesc</a></li>
+                        <li><a href="garantii.html">Garantii oferite</a></li>
+                        <li><a href="livrare-retur.html">Livrare si retur</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="termeni()">Termeni legali <i class="fa fa-angle-down"></i></p>
+                    <ul id="termeni-legali">
+                        <li><a href="termeni-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="https://www.dataprotection.ro/?page=Responsabilul_cu_protectia_datelor" target="_blank">Prelucrarea datelor cu caracter personal</a></li>
+                        <li><a href="http://www.anpc.gov.ro/" target="_blank">A.n.p.c</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="follow()">Follow us <i class="fa fa-angle-down"></i></p>
+                    <div id="follow" class="follow">
+                        <div class="icon-follow">
+                            <i class="fa fa-facebook"></i>
+                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-instagram"></i>
+                            <a href="http://www.instagram.com" target="_blank">Instagram</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-youtube"></i>
+                            <a href="http://www.youtube.com" target="_blank">Youtube</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-google"></i>
+                            <a href="http://www.google.com">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <span>Copyright © Vlad Frunza 2019. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

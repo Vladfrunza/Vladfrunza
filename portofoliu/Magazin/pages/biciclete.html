@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|PT+Serif:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/produse.css">
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/biciclete.js"></script>
+    <title>MySport</title>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>e-mail: mysport@yahoo.com</p>
+            </div>
+            <div class="col-1-of-2">
+                <p>Call center: 0223225255</p>
+            </div>
+        </div>
+    </div>
+    <div class="head-top">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="top-left">
+                    <a href="../index.html"><img class="img-head" src="../images/logo.png" alt="logo mysport"></a>
+                    <span>MySport</span>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="top-search">
+                    <form action="search.php">
+                        <input type="text" placeholder="Cautare.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="top-right">
+                    <div class="dropdown-cart" id="dropdown-cart">
+                        <i class="fa fa-shopping-cart" onclick="dropdownCart()"></i>
+                        <div class="dropdown-cart-empty" id="dropdown-cart-empty">
+                            <p>Nu ai produse in cos</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-cont">
+                        <i class="fa fa-caret-down"></i>
+                        <span class="dropdown-span" onclick="dropdownCont()">Contul Meu</span>
+                        <div class="dropdown-cont-body" id="dropdown-cont-body">
+                            <p>Utilizator</p>
+                            <input type="text" name="utilizator" placeholder="utilizator" value="" />
+                            <p>Parola</p>
+                            <input type="password" name="parola" placeholder="parola" value="" />
+                            </br>
+                            <button>Autentificare</button>
+                            <div class="cont-nou">
+                                <p><a href="#">Recuperare parola</a></p>
+                                <p><a href="#">Nu ai cont?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="row">
+            <p>CEL MAI MIC PRET !</p>
+            <p>Transport gratuit de la 499,9 Ron </p>
+            <p>*Daca gasesti in alta parte mai ieftin, primesti 2x diferenta</p>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul>
+                    <li><a href="biciclete.html" class="ciclism">Ciclism</a></li>
+                    <li><a href="alergare.html" class="alergare">Alergare</a></li>
+                    <li><a href="inot.html" class="inot">Inot</a> </li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="button-contact">
+                    <div class="button-contact-primary">
+                        <ul>
+                            <li class="contact-btn" onclick="contact()">CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-contact" id="dropdown-contact">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-phone"></i> Info:</p>
+                                <p>021.311.825</p>
+                                <p class="contact"><i class="fa fa-calendar"></i> Program:</p>
+                                <p>Luni-Vineri: 10-20</p>
+                                <p>Sambata:10-16</p>
+                                <p>Duminica: inchis</p>
+                                <p class="contact"><i class="fa fa-address-card"></i> Adresa:</p>
+                                <p>Musatini nr 3, Iasi</p>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p class="contact"><i class="fa fa-envelope"></i>E-mail</p>
+                                <p>mysport@yahoo.com</p>
+                                <p class="contact"><i class="fa fa-wrench"></i>Service</p>
+                                <p>072606300</p>
+                                <p>*La service este necesara programare</p>
+                                <button><a href="contact.html">Detalii</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-tab">
+        <div class="row">
+            <div class="col-1-of-4 ">
+                <div class="nav-mobile" onclick="toggle()">
+                    <div class="nav-toggle">
+                        <div class="nav-toggle-bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="../index.html">Acasa</a></li>
+                            <li><a href="biciclete.html">Ciclism</a></li>
+                            <li><a href="alergare.html">Alergare</a></li>
+                            <li><a href="inot.html">Inot</a></li>
+                            <li><a href="contact.html">CONTACT</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p id='meniu'>Meniu</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="cautare()"><i class="fa fa-search"></i>Cauta</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="profil()"><i class="fa fa-user"></i>Cont</p>
+            </div>
+            <div class="col-1-of-4">
+                <p onclick="shopping()"><i class="fa fa-shopping-cart"></i>Cos</p>
+            </div>
+        </div>
+        <div class="dropdown-cautare" id="dropdown-cautare">
+            <form action="#">
+                <input type="search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="dropdown-profil" id="dropdown-profil">
+            <form action="#">
+                <input type="search" placeholder="Nume">
+                <input type="text" placeholder="Prenume">
+                <button>Autentificare</button>
+            </form>
+        </div>
+        <div class="dropdown-cumparaturi" id="dropdown-cumparaturi">
+            <p>Nu exista produse</p>
+        </div>
+    </div>
+    <section class="vanzari">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="filtreaza">
+                    <p id="filter1">Filtre</p>
+                    <div class="filtreScroll">
+                        <p onclick="gen()">Femei/Barbati <i class="fa fa-angle-down"></i></p>
+                        <select name="gen" id="gen">
+                            <option value="All">Toate</option>
+                            <option value="dama">Femei</option>
+                            <option value="masculin">Barbati</option>
+                        </select>
+                        <p onclick="tip()">Tip<i class="fa fa-angle-down"></i></p>
+                        <select name="tip" id="tip">
+                            <option value="All">Toate</option>
+                            <option value="MTB">Mountain bike</option>
+                            <option value="Cursiera">Cursiere</option>
+                        </select>
+                        <p onclick="culoare()">Culoare <i class="fa fa-angle-down"></i></p>
+                        <select name="culoare" id="culoare">
+                            <option value="All">Toate</option>
+                            <option value="ros">Rosu</option>
+                            <option value="albastru">Albastru</option>
+                            <option value="negru">Negru</option>
+                            <option value="gri">Gri</option>
+                            <option value="mov">Mov</option>
+                            <option value="verde">Verde</option>
+                            <option value="alb">Alb</option>
+                        </select>
+                        <p onclick="brand()">Producator <i class="fa fa-angle-down"></i></p>
+                        <select name="brand" id="brand">
+                            <option value="All">Toate</option>
+                            <option value="Merinda">Merida</option>
+                            <option value="Romet">Romet</option>
+                            <option value="Giant">Giant</option>
+                            <option value="Cannondale">Cannondale</option>
+                        </select>
+                        <p onclick="cadru()">Cadru <i class="fa fa-angle-down"></i></p>
+                        <select name="cadru" id="cadru">
+                            <option value="All">Toate</option>
+                            <option value="aluminiu">Aluminiu</option>
+                            <option value="carbon">Carbon</option>
+                        </select>
+                        <p onclick="transmisie()">Transmisie <i class="fa fa-angle-down"></i></p>
+                        <select name="transmitie" id="transmisie">
+                            <option value="All">Toate</option>
+                            <option value="1x7">1x7 viteze</option>
+                            <option value="1x9">1x9 viteze</option>
+                            <option value="2x8">2x8 viteze</option>
+                            <option value="2x10">2x10 viteze</option>
+                            <option value="3x7">3x7 viteze</option>
+                            <option value="3x8">3x8 viteze</option>
+                            <option value="3x9">3x9 viteze</option>
+                            <option value="3x10">3x10 viteze</option>
+                            <option value="3x11">3x11 viteze</option>
+                            <option value="3x12">3x12 viteze</option>
+                        </select>
+                        <p onclick="frana()">Tip frana <i class="fa fa-angle-down"></i></p>
+                        <select name="frana" id="frana">
+                            <option value="All">Toate</option>
+                            <option value="disc">Disc</option>
+                            <option value="v-brake">V-brake</option>
+                        </select>
+                        <p onclick="roata()">Dimensiune roata <i class="fa fa-angle-down"></i></p>
+                        <select name="roata" id="roata">
+                            <option value="All">Toate</option>
+                            <option value='26'>26"</option>
+                            <option value='27.5'>27.5"</option>
+                            <option value='28'>28"</option>
+                            <option value='29'>29"</option>
+                        </select>
+                        <p onclick="marime()">Marime <i class="fa fa-angle-down"></i></p>
+                        <select name="marime" id="marime">
+                            <option value="All">Toate</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                        <p onclick="disponibil()">Disponibilitate stoc <i class="fa fa-angle-down"></i></p>
+                        <select name="disponibil" id="disponibil">
+                            <option value="All">Toate</option>
+                            <option value="depozit">In depozit</option>
+                            <option value="magazin">In magazin</option>
+                        </select>
+                    </div>
+                    <button onclick="filter()">Cauta</button>
+                </div>
+            </div>
+            <div class="col-3-of-4">
+                <div class="sorteaza">
+                    <p>Sorteaza dupa</p>
+                    <select name="sort" id="sort" onchange="filter()">
+                        <option value="crescator">Crescator</option>
+                        <option value="descrescator">Descrescator</option>
+                        <option value="popular">Cele mai populare</option>
+                        <option value="review">Nr. review-uri</option>
+                    </select>
+                </div>
+                <div class="produs">
+                    <div class="container" id="cardContainer">
+                        <div id="container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <p onclick="informatii()">Informatii Utile <i class="fa fa-angle-down"></i></p>
+                    <ul id="informatii-utile">
+                        <lI><a href="contact.html">Contact</a></lI>
+                        <li><a href="cumplatesc.html">Cum platesc</a></li>
+                        <li><a href="garantii.html">Garantii oferite</a></li>
+                        <li><a href="livrare-retur.html">Livrare si retur</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="termeni()">Termeni legali <i class="fa fa-angle-down"></i></p>
+                    <ul id="termeni-legali">
+                        <li><a href="termeni-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="https://www.dataprotection.ro/?page=Responsabilul_cu_protectia_datelor" target="_blank">Prelucrarea datelor cu caracter personal</a></li>
+                        <li><a href="http://www.anpc.gov.ro/" target="_blank">A.n.p.c</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3">
+                    <p onclick="follow()">Follow us <i class="fa fa-angle-down"></i></p>
+                    <div id="follow" class="follow">
+                        <div class="icon-follow">
+                            <i class="fa fa-facebook"></i>
+                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-instagram"></i>
+                            <a href="http://www.instagram.com" target="_blank">Instagram</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-youtube"></i>
+                            <a href="http://www.youtube.com" target="_blank">Youtube</a>
+                        </div>
+                        <div class="icon-follow">
+                            <i class="fa fa-google"></i>
+                            <a href="http://www.google.com">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <span>Copyright © Vlad Frunza 2019. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    initialDisplay();
+</script>
+
+</html>

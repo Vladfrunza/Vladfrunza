@@ -1,0 +1,14 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "site case de lemn",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "vlad frunza",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
